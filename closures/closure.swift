@@ -1,5 +1,9 @@
 // Self contained blocks of functionality which can be passed around
 
+// (input type) -> (output type) = { parameters: type in 
+//     // code
+// }
+
 var printClosure: (String) -> (String) = { name in
     return "Hi \(name)"
 }
@@ -31,6 +35,7 @@ print(pplWhoVote)
 
 let pplWhoVote2 = population.filter{ $0.age >= 18 }
 
+
 print(pplWhoVote2)
 
 //Escaping closures
@@ -56,4 +61,3 @@ func autoclosurePrint(_ name: @autoclosure () -> String){
 }
 
 autoclosurePrint("Abj")
-

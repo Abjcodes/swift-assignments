@@ -19,6 +19,8 @@ print("Logical NOT:", !x)
 //Ranges
 let closedRange = 1...5
 let halfOpenRange = 1..<5
+// var arr = [1,2,3,4,5]
+// 1...
 
 print("Closed Range:", Array(closedRange))    
 print("Half-Open Range:", Array(halfOpenRange))
@@ -39,6 +41,10 @@ print(k)
 var str1 = "Hi"
 var str2 = "John"
 
+var str3 = 1
+
+var con = str1 + String(str3)
+print("Concatenation of \(str1) and \(str3) is \(con)")
 print("\(str1) \(str2)")
 
 //Comparison operators
@@ -52,11 +58,18 @@ print("Is Less Than:", num1 < num2)
 print("Is Greater Than or Equal:", num1 >= num2)
 print("Is Less Than or Equal:", num1 <= num2)
 
+
 //Type casting
 let stringValue = "123"
 let intValue = Int(stringValue)
 
 print(intValue)
 
-//Reminder
+//Remainder
 print(3%2)
+
+var num3 = 3
+
+num3 += 3
+
+print("Compound example \(num3)")
